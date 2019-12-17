@@ -63,7 +63,7 @@ namespace SalutoInglese
             string nome = (txtnome.Text);
             string cognome = (txtcognome.Text);
             var datadinascita = data.SelectedDate;
-            using (StreamWriter w = new StreamWriter("Test.txt", true, Encoding.UTF8))
+            using (StreamWriter w = new StreamWriter( "Test.txt", true, Encoding.UTF8))
             {
                 w.WriteLine($"{nome},{cognome},{datadinascita.Value.ToShortDateString()}");
                 w.Flush();  
